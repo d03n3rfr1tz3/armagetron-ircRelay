@@ -1,2 +1,42 @@
-# armagetron-ircRelay
-Armagetron Script for an IRC Relay, that exchanges chat and action messages between the Armagetron all-players chat and a specific channel of an IRC server.
+# IRC Relay
+
+[![Compile Plugin](https://github.com/d03n3rfr1tz3/bzflag-ircRelay/actions/workflows/build.yml/badge.svg)](https://github.com/d03n3rfr1tz3/bzflag-ircRelay/actions/workflows/build.yml)
+[![GitHub release](https://img.shields.io/github/release/d03n3rfr1tz3/bzflag-ircRelay.svg)](https://github.com/d03n3rfr1tz3/bzflag-ircRelay/releases/latest)
+![Minimum BZFlag Version](https://img.shields.io/badge/BZFlag-v2.4.0+-blue.svg)
+[![License](https://img.shields.io/github/license/d03n3rfr1tz3/bzflag-ircRelay.svg)](LICENSE.md)
+
+This plugin is a clone of the IRC Relay plugin for BZFlag I (partially) made.
+It should work with version Armagetron 0.2.9 sty+ct+ap.
+
+## Requirements
+
+You need the sty+ct+ap version of your Armagetron server, which you can find here: \
+https://code.launchpad.net/~armagetronad-ap/armagetronad/0.2.9-armagetronad-sty+ct+ap
+
+## Usage
+
+### Loading the plug-in
+
+Drop the `ircRelay.cfg` in your settings folder and load it with `INCLUDE ircRelay.cfg` in your `server_info.cfg`.
+
+Also drop the `ircRelay.php` script into your scripts folder. You might want to create a file named `ircRelay.log`
+right next to it and give write permissions, if you want some sort of logging.
+
+### Configuration
+
+The configuration is at the start of the `ircRelay.php` file. Just fill out the variables and you are ready.
+The value for `debug` can be between 0 and 4, depending on how much information you want.
+
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| `ircAddress` | string |  | Required. The IP address of your IRC server. |
+| `ircChannel` | string |  | Required. The channel your IRC Relay should join. |
+| `ircNick` | string |  | Required. The nickname your IRC Relay should use. |
+| `ircPass` | string |  | Optional. The password for the IRC server. |
+| `ircAuthType` | string |  | Optional. The authentication type of the IRC server. Choose one: `AuthServ`, `NickServ` or `Q`. |
+| `ircAuthPass` | string |  | Optional. The authentication password for the IRC server. |
+| `ircIgnore` | string |  | Optional. Comma separated list of ignored IRC users. Messages from these users will not be passed into the BZFlag chat. |
+
+## License
+
+[LICENSE](LICENSE.md)
