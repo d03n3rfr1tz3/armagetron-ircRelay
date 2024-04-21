@@ -1,9 +1,8 @@
 # IRC Relay
 
-[![Compile Plugin](https://github.com/d03n3rfr1tz3/bzflag-ircRelay/actions/workflows/build.yml/badge.svg)](https://github.com/d03n3rfr1tz3/bzflag-ircRelay/actions/workflows/build.yml)
-[![GitHub release](https://img.shields.io/github/release/d03n3rfr1tz3/bzflag-ircRelay.svg)](https://github.com/d03n3rfr1tz3/bzflag-ircRelay/releases/latest)
-![Minimum BZFlag Version](https://img.shields.io/badge/BZFlag-v2.4.0+-blue.svg)
-[![License](https://img.shields.io/github/license/d03n3rfr1tz3/bzflag-ircRelay.svg)](LICENSE.md)
+[![Compile Plugin](https://github.com/d03n3rfr1tz3/armagetron-ircRelay/actions/workflows/build.yml/badge.svg)](https://github.com/d03n3rfr1tz3/armagetron-ircRelay/actions/workflows/build.yml)
+![Minimum BZFlag Version](https://img.shields.io/badge/Armagetron-v0.2.9+-blue.svg)
+[![License](https://img.shields.io/github/license/d03n3rfr1tz3/armagetron-ircRelay.svg)](LICENSE.md)
 
 This plugin is a clone of the IRC Relay plugin for BZFlag I (partially) made.
 It should work with version Armagetron 0.2.9 sty+ct+ap.
