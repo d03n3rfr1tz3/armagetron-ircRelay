@@ -1,0 +1,21 @@
+name: Build Script
+
+# The workflow will run on every push and pull request to the repository
+on:
+  workflow_dispatch:
+  # (optional) Run workflow when pushing on master/main
+  push:
+  pull_request:
+    branches: ["main"]
+  schedule:
+    - cron:  '0 0 1 * *'
+
+jobs:
+  build-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    - name: Check PHP syntax errors
+      uses: overtrue/phplint@9.1.2
