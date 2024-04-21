@@ -1,7 +1,7 @@
 # IRC Relay
 
 [![Compile Plugin](https://github.com/d03n3rfr1tz3/armagetron-ircRelay/actions/workflows/build.yml/badge.svg)](https://github.com/d03n3rfr1tz3/armagetron-ircRelay/actions/workflows/build.yml)
-![Minimum BZFlag Version](https://img.shields.io/badge/Armagetron-v0.2.9+-blue.svg)
+![Minimum Armagetron Version](https://img.shields.io/badge/Armagetron-v0.2.9+-blue.svg)
 [![License](https://img.shields.io/github/license/d03n3rfr1tz3/armagetron-ircRelay.svg)](LICENSE.md)
 
 This plugin is a clone of the IRC Relay plugin for BZFlag I (partially) made.
@@ -34,7 +34,7 @@ The value for `debug` can be between 0 and 4, depending on how much information 
 | `ircPass` | string |  | Optional. The password for the IRC server. |
 | `ircAuthType` | string |  | Optional. The authentication type of the IRC server. Choose one: `AuthServ`, `NickServ` or `Q`. |
 | `ircAuthPass` | string |  | Optional. The authentication password for the IRC server. |
-| `ircIgnore` | string |  | Optional. Comma separated list of ignored IRC users. Messages from these users will not be passed into the BZFlag chat. |
+| `ircIgnore` | string |  | Optional. Array of strings of ignored IRC users. Messages from these users will not be passed into the Armagetron chat. |
 
 ## License
 
