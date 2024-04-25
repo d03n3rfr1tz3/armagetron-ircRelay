@@ -29,6 +29,7 @@ The value for `debug` can be between 0 and 4, depending on how much information 
 | Name | Type | Default | Description |
 | ---- | ---- | ------- | ----------- |
 | `ircAddress` | string |  | Required. The IP address of your IRC server. |
+| `ircPort` | int |  | Required. The port of your IRC server. Default is 6667. |
 | `ircChannel` | string |  | Required. The channel your IRC Relay should join. |
 | `ircNick` | string |  | Required. The nickname your IRC Relay should use. |
 | `ircPass` | string |  | Optional. The password for the IRC server. |
