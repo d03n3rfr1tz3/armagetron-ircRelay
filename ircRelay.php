@@ -4,6 +4,7 @@
 $config = array();
 $config["debug"] = 1;
 $config["ircAddress"] = "";
+$config["ircPort"] = 6667;
 $config["ircChannel"] = "";
 $config["ircNick"] = "";
 $config["ircPass"] = "";
@@ -61,7 +62,7 @@ function Start()
 	// connect to server
 	$address = $config["ircAddress"];
 	if (!preg_match("/[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}/", $address)) $address = gethostbyname($address);
-	if (!socket_connect($sock, $address, 6667)) {
+	if (!socket_connect($sock, $address, $config["ircPort"])) {
 		Debug("Connection to irc server " . $config["ircAddress"] . " (" . $address . ") failed", 1);
 		$sock = false;
 		return;
